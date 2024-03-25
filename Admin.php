@@ -22,13 +22,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submitBtn'])) {
         }
     }
 }
-?>
 
-<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
-    <button name="allUser">View All Users</button>
-</form>
 
-<?php 
+echo "<form action='#' method='POST'>";
+    echo "<button name='allUser'>View All Users</button>";
+echo "</form>";
+
+
     if(isset($_POST['allUser'])){
         $allUsers = mysqli_query($conn,"SELECT * FROM users");
         if(mysqli_num_rows($allUsers)>0){
