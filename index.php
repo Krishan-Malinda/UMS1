@@ -31,7 +31,7 @@
             }
             echo "<table>";
         }else{
-            echo'error';
+            echo'Enter your User ID';
         }
     }   
 ?>
