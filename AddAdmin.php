@@ -36,8 +36,10 @@
             $uId = $_POST['userId'];
             $uname = $_POST['username'];
             $pwd = $_POST['password'];
+
             $query = "INSERT INTO users VALUES('$uId', '$uname', '$pwd')";
             $success = mysqli_query($conn,$query);
+
             if(!$success){
                 echo "Can't add this admin!";
             }else{
@@ -45,7 +47,8 @@
             }
         }
     ?>
-
+    <br><a href='Admin.php'>Go home</a>
+    
 </body>
 </html>
 
