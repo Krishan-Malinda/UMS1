@@ -4,7 +4,7 @@
 <html>
 
 <head>
-    <title>PHP Test</title>
+    <title>Log in</title>
 </head>
 
 <body>
